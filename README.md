@@ -1,2 +1,2 @@
-Api: OpenWeather\n
+Api: OpenWeather
 Author: Trần Vũ Trọng Hai
