@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/_54sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:padding="@dimen/_4sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/time_bg"
+            android:paddingVertical="@dimen/_4sdp"
+            android:text="@string/now"
+            android:gravity="center"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/black"
+            android:id="@+id/timeText"/>
+        <ImageView
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:src="@drawable/rain"
+            android:padding="@dimen/_4sdp"
+            android:id="@+id/imageIcon"
+            android:layout_marginTop="@dimen/_8sdp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="30%"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#5DCEFF"
+            android:id="@+id/percent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:text="20o"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/white"
+            android:id="@+id/temp"/>
+
+
+
+
+    </LinearLayout>
+</layout>

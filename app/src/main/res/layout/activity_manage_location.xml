@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/weather_black"
+        android:orientation="vertical">
+        <include layout="@layout/layout_header" android:id="@+id/header"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_frame"
+                android:padding="@dimen/_8sdp"
+                android:gravity="center"
+                android:id="@+id/searchView">
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_search"
+                    />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:hint="@string/search_location"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:paddingVertical="@dimen/_2sdp"
+                    android:paddingHorizontal="@dimen/_4sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"
+                    android:id="@+id/searchContent"/>
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_next"
+                    android:visibility="gone"
+                    android:id="@+id/next"
+                    />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:id="@+id/rcvListSearch"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_search"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
